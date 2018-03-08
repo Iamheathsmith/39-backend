@@ -19,10 +19,10 @@
     "coverageDirectory": "./coverage",
     "coverageThreshold": {
       "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": 80
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
       }
     }
   },
@@ -34,8 +34,8 @@
     "test:watch": "jest --watchAll",
     "lint": "eslint .",
     "lint:test": "npm run lint && npm test",
-    "dbon": "mkdir -p ./db && mongod --dbpath ./db",
-    "dboff": "killall mongod"
+    "start-db": "mkdir -p ./db && mongod --dbpath ./db",
+    "stop-db": "killall mongod"
   },
   "devDependencies": {
     "babel-jest": "^22.4.1",
